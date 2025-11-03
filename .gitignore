@@ -25,6 +25,7 @@ hs_err_pid*
 **/target/
 **/gen/
 .DS_Store
+**/Config.toml
 
 
 # IDE specific files
