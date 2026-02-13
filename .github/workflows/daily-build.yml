@@ -40,6 +40,7 @@ jobs:
           for folder in "${BALLERINA_PROJECTS[@]}"; do
             if [[ ! "$folder" =~ ^(${SKIP_FOLDERS[@]//\//|}) ]]; then
               pushd "$folder"
+              rm -f Dependencies.toml
               bal build
               popd
             fi
